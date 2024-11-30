@@ -1,0 +1,138 @@
+/* Main container styling */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Header styling */
+.header h1 {
+  font-size: 2.5em;
+  color: #6fcf97;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Layout for larger screens */
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+/* Section styling */
+.section {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.section:hover {
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+}
+
+.section h2 {
+  color: #333;
+  font-size: 1.5em;
+  border-bottom: 2px solid #6fcf97;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+button {
+  background-color: #6fcf97;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #57b784;
+  transform: translateY(-2px);
+}
+
+/* Input and file styling */
+input[type="text"], input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1em;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add gap in status select dropdown */
+select {
+  margin-top: 10px; /* Add gap above the dropdown */
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1em;
+}
+
+/* Chat and upload container adjustments */
+.chat-container, .upload-container {
+  display: flex;
+  gap: 10px;
+  max-height: 250px; /* Reduced height */
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.chat-container {
+  flex-grow: 1;
+}
+
+.upload-container {
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+
+/* Shipment list */
+.shipment-list {
+  list-style: none;
+  padding: 0;
+}
+
+.shipment-list li {
+  padding: 12px;
+  background: #f1f9f1;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat messages styling */
+.chat-messages {
+  max-height: 200px; /* Reduced height */
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #f1f9f1;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual message styling */
+.message {
+  margin-bottom: 5px;
+  padding: 8px;
+  border-radius: 8px;
+  background: #d9f2d9;
+}
